@@ -1,4 +1,8 @@
 #NumberTests.py
+#Name: Afrah Mohamoud 
+#Date: 03/08/2026
+#Assignment: Lab 7
+
 
 def isThreeOrFive(n):
   """Returns boolean determination if number is multiple of 3 or 5"""
@@ -7,11 +11,31 @@ def isThreeOrFive(n):
     return True
   else:
     return False
+def getFactors(num):
+  '''Returns a list of all factors of a given integer'''
+  factor = []
+  for f in range (1,num//2 + 1):
+    if num % f == 0:
+      factor.append(f) 
+  return factor
 
 def isPrime(p):
   """Returns boolean (True/False) if the value given is prime."""
+  if p < 2:
+    return False
+
+  if p == 2:
+    return True
+
+  if isEven(p):
+    return False 
+  
+  for div in range(3, int(p ** 0.5) + 1, 2):
+    if p % div == 0:
+      return False
 
   return True
+
 
 def isEven(n):
   """Returns boolean about given value being even."""

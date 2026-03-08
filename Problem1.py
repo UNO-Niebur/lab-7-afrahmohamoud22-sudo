@@ -1,4 +1,8 @@
 #Project Euler Problem 1
+#Name: Afrah Mohamoud 
+#Date: 03/08/2026
+#Assignment: Lab 7
+
 
 import NumberTests
 
