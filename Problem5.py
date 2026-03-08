@@ -4,7 +4,7 @@
 #Date: 03/08/2026
 #Assignment: Lab 7
 
-#Approach: Use a sieve to mark non-primes, then sum the values still marked prime.
+#Approach: Use a sieve(2) to mark non-primes, then sum the values still marked prime.
 #Runtime notes: Efficient for the 2,000,000 limit.
 
 def sumPrimesBelow(limit):
